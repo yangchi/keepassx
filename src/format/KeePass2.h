@@ -24,8 +24,8 @@
 
 namespace KeePass2
 {
-    const quint32 SIGNATURE_1 = 0x9AA2D903;
-    const quint32 SIGNATURE_2 = 0xB54BFB67;
+    const quint32 SIGNATURE_1 = 0x9AA2D903; //the first 32 bits in a KeePass db file
+    const quint32 SIGNATURE_2 = 0xB54BFB67; //the next 32 bits in a Keepass db file
     const quint32 FILE_VERSION = 0x00030001;
     const quint32 FILE_VERSION_MIN = 0x00020000;
     const quint32 FILE_VERSION_CRITICAL_MASK = 0xFFFF0000;

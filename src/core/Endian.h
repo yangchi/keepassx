@@ -34,6 +34,12 @@ namespace Endian {
 
     qint16 readInt16(QIODevice* device, QSysInfo::Endian byteOrder, bool* ok);
     quint16 readUInt16(QIODevice* device, QSysInfo::Endian byteOrder, bool* ok);
+
+	/*
+	 * Read a 32 bit Int from QIODevice device in the byteOrder
+	 * return the read value if succeed, also set ok = true
+	 * else return 0 and set ok = false as failure indicator
+	 */
     qint32 readInt32(QIODevice* device, QSysInfo::Endian byteOrder, bool* ok);
     quint32 readUInt32(QIODevice* device, QSysInfo::Endian byteOrder, bool* ok);
     qint64 readInt64(QIODevice* device, QSysInfo::Endian byteOrder, bool* ok);
